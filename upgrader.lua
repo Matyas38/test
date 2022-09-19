@@ -26,6 +26,4 @@ function main()
 	file.close();
 end
 
-if 
-
 main();
