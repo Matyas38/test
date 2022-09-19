@@ -3,7 +3,7 @@ local title = "Matyas' CC Upgrader V1";
 
 local args = {...};
 
-print(args);
+print(args[0]);
 local program = "upgrader";
 
 term.clear();
