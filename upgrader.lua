@@ -1,7 +1,7 @@
 local x, y = term.getSize();
 local title = "Matyas' CC Upgrader V1";
 
-local args = {...};
+local tArgs = {...};
 
 local program = "upgrader";
 
@@ -19,8 +19,8 @@ end
 function main()
 	printTitle();
 	term.setCursorPos(1, 10);
-	
-print(args[0]);
+
+	print(tArgs[1]);
 
 	local content = http.get("https://raw.githubusercontent.com/Matyas38/test/master/".. program ..".lua");
 	local file = fs.open("/".. program ..".lua", "w");
