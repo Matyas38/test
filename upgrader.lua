@@ -1,6 +1,11 @@
 local x, y = term.getSize();
 local title = "Mayuas' CC Upgrader V1";
 
+local args = {...}:
+
+print(args);
+local program = "upgrader";
+
 term.clear();
 
 function printTitle()
@@ -15,10 +20,12 @@ end
 function main()
 	printTitle();
 
-	local content = http.get("https://raw.githubusercontent.com/Matyas38/test/master/upgrader.lua");
+	local content = http.get("https://raw.githubusercontent.com/Matyas38/test/master/".. program ..".lua");
 	local file = fs.open("/upgrader.lua", "w");
 	file.write(content.readAll());
 	file.close();
 end
+
+if 
 
 main();
