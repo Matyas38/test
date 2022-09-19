@@ -20,7 +20,9 @@ function main()
 	printTitle();
 	term.setCursorPos(1, 10);
 
-	print(tArgs[1]);
+	if (tArgs[1] != nil) {
+		program = tArgs[1];
+	}
 
 	local content = http.get("https://raw.githubusercontent.com/Matyas38/test/master/".. program ..".lua");
 	local file = fs.open("/".. program ..".lua", "w");
