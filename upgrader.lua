@@ -23,7 +23,7 @@ function main()
 print(args[0]);
 
 	local content = http.get("https://raw.githubusercontent.com/Matyas38/test/master/".. program ..".lua");
-	local file = fs.open("/upgrader.lua", "w");
+	local file = fs.open("/".. program ..".lua", "w");
 	file.write(content.readAll());
 	file.close();
 end
