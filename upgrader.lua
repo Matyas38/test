@@ -19,6 +19,8 @@ end
 function main()
 	printTitle();
 	term.setCursorPos(1, 10);
+	
+print(args[0]);
 
 	local content = http.get("https://raw.githubusercontent.com/Matyas38/test/master/".. program ..".lua");
 	local file = fs.open("/upgrader.lua", "w");
