@@ -1,7 +1,7 @@
 local x, y = term.getSize();
-local title = "Mayuas' CC Upgrader V1";
+local title = "Matyas' CC Upgrader V1";
 
-local args = {...}:
+local args = {...};
 
 print(args);
 local program = "upgrader";
