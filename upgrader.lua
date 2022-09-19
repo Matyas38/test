@@ -3,7 +3,6 @@ local title = "Matyas' CC Upgrader V1";
 
 local args = {...};
 
-print(args[0]);
 local program = "upgrader";
 
 term.clear();
@@ -19,6 +18,7 @@ end
 
 function main()
 	printTitle();
+	term.setCursorPos(1, 10);
 
 	local content = http.get("https://raw.githubusercontent.com/Matyas38/test/master/".. program ..".lua");
 	local file = fs.open("/upgrader.lua", "w");
